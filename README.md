@@ -1,5 +1,5 @@
 ## fastai
-The fastai library simplifies training fast and accurate neural nets using modern best practices. See the fastai website to get started. The library is based on research into deep learning best practices undertaken at fast.ai, and includes "out of the box" support for vision, text, tabular, and collab (collaborative filtering) models. For brief examples, see the examples folder; detailed examples are provided in the full documentation. For instance, here's how to train an MNIST model using resnet18 (from the vision example):
+The fastai library simplifies training fast and accurate neural nets using modern best practices. See the fastai website to get started. The library is based on research into deep learning best practices undertaken at fast.ai, and includes "out of the box" support for vision, text, tabular, and collab (collaborative filtering) models. Detailed examples are provided in the full documentation. For instance, here's how to train an MNIST model using resnet18 (from the vision example):
 ```
 from fastai.vision import *
 path = untar_data(MNIST_PATH)
@@ -20,3 +20,4 @@ You will need to get the urls of each of the images. Before running the followin
 urls = Array.from(document.querySelectorAll('.rg_di .rg_meta')).map(el=>JSON.parse(el.textContent).ou);
 window.open('data:text/csv;charset=utf-8,' + escape(urls.join('\n')));
 ```
+You will get a images folder with all the images on the page.
