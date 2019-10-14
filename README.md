@@ -22,6 +22,15 @@ window.open('data:text/csv;charset=utf-8,' + escape(urls.join('\n')));
 ```
 You will get a images folder with all the images on the page. Here what I downloaded from google are three folders of food images which are placed in the data folder.
 
+### requirements:
+- [Docker CE](https://github.com/chaoyingc/Docker)
+- [NVIDIA Docker](https://github.com/NVIDIA/nvidia-docker)
+- NVIDIA Driver
+- Fastai
+### Build:
+```
+$sudo docker build -t paperspace/fastai .
+```
 If you run the notebook, please be sure that the GPU is running and fast.ai is installed either. Otherwise(like what I did), just run the notebook on google colab,which provides free GPU.
 
 The notebook is for predicting which class the image belongs to, you can create as many classes as you want.
